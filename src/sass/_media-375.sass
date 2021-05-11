@@ -1,0 +1,87 @@
+@media screen and ( max-width: 375px )
+    .container
+        margin: 0 rems(10)
+    .main_title
+        margin-top: rems(8)
+        max-width: 100%
+        font-weight: 900
+        font-size: rems(20)
+        line-height: rems(23.9)
+        letter-spacing: rems(1.5)
+    .header
+        padding-top: rems(20)
+        .container
+            justify-content: center
+            align-items: center
+    .logo
+        margin-top: rems(52)
+        max-width: 80%
+        // text-align: center
+        .logo_img
+            max-width: 100%
+    .number a
+        display: none
+
+    .pattern_left1
+        display: none
+    .pattern_left2
+        display: none
+    .navigation_list
+        justify-content: center
+        align-items: center
+        width: 95%
+        border-bottom-width: 1.8px
+    
+    .navigation_list__info
+        // display: none
+    .info__item
+        &::before
+            left: -10.5%
+    .number-mobile 
+        display: block
+        margin-top: rems(30)
+        a
+            color: $main-color-green
+            text-decoration: none
+            font-size: rems(19)
+            line-height: rems(24)
+            letter-spacing: rems(3.5)
+            font-weight: 700
+    .left-pattern
+        display: none
+    .right-pattern
+        display: none
+    .footer-bg
+        transform: translate(0, -95%)
+    // Popup
+    .popup
+        display: none
+        width: 95%
+        min-height: 400px
+        background-color: rgba(#fff, 1)
+        border-radius: 50%
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
+    .popup__form
+        width: 80%
+        min-height: 250px
+    input:not(input[type='submit'])
+        background: transparent
+        border: 1px solid transparent
+        outline: none
+        text-align: center
+        border-bottom: 2px solid $main-color-green
+        padding: 15px
+        width: 60%
+        color: $main-color-green
+        &::placeholder
+            color: $main-color-green
+            text-transform: uppercase
+            font-size: rems(20) !important
+            line-height: rems(24)
+            letter-spacing: rems(1.15)
+    .form_input-submit
+        padding-left: rems(10)
+        font-size: rems(16)

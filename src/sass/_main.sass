@@ -1,0 +1,272 @@
+.main
+    display: flex
+    flex-direction: column
+    justify-content: center
+    // position: relative
+    .cloudy
+        display: flex
+        background-color: rgba(0,0,0,.2)
+        position: relative
+        width: 100%
+    .cloud1
+        position: absolute
+        top: 20px
+        left: 13%
+        // transform: translateX(250px) translateY(20px)
+    .cloud2
+        position: absolute
+        top: -15px
+        left: 31.25%
+        // transform: translateX(600px) translateY(-15px)
+    .cloud3
+        position: absolute
+        top: -48px
+        left: 42.18%
+        // transform: translateX(810px) translateY(-48px)
+        z-index: 1
+    .cloud4
+        position: absolute
+        top: 50px
+        left: 67.7%
+        // transform: translateX(1300px) translateY(50px) rotateY(180deg)
+    .cloud5
+        position: absolute
+        top: 0
+        left: 83%
+        // transform: translateX(1600px) translateY(0)
+    .sun
+        position: absolute
+        top: -50px
+        left: 53.125%
+        // transform: translateX(1020px) translateY(-50px)
+        z-index: 0
+    .container
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        position: relative
+.main_title
+    max-width: 80%
+    margin-top: rems(70)
+    font-family: 'Namu-1400'
+    color: $second-color-main-black
+    text-align: center
+
+// NAV_LIST--NEW
+// .navigation
+//     width: 100%
+// .navigation_list
+//     display: flex
+//     flex-direction: column
+//     align-items: center
+// .navigation_list-wrap
+//     width: 60%
+//     padding: 0 rems(25)
+//     margin: 0 auto
+//     display: flex
+//     flex-direction: row
+//     justify-content: space-between
+//     padding-bottom: rems(20)
+//     border-bottom: 1.7px solid $main-color-red
+// .navigation_list__item
+//     font-size: rems(20)
+//     line-height: rems(23.57)
+//     color: $main-color-green
+//     font-family: 'TT-Hoves-400'
+//     text-transform: uppercase
+//     letter-spacing: rems(.5)
+//     cursor: pointer
+// .navigation_list__item.active
+//     font-family: 'TT-Hoves-600'
+//     font-size: rems(24)
+//     line-height: rems(28.27)
+//     color: $main-color-red
+// .navigation_list-info-wrap
+//     display: flex
+//     flex-direction: row
+//     width: 60%
+//     // justify-content: center
+// .navigation_list__info
+//     padding-top: 15px
+//     min-height: 158px
+// .info__item
+//     font-size: rems(18)
+//     line-height: rems(23)
+//     letter-spacing: rems(.5)
+    
+// .info__item + .info__item
+//     margin-top: rems(17)
+// .list_about
+//     display: none
+// .list_benefits
+//     // display: none
+//     text-align: center
+//     margin: 0 auto
+
+// .list_place
+//     display: none
+//     text-align: right
+//     margin-left: auto
+// /NAV_LIST--NEW
+
+
+
+// Nav_list
+.navigation
+.navigation_list
+    display: flex
+    justify-content: space-around
+    border-bottom: 1px solid $main-color-red
+    padding-bottom: rems(10)
+    padding-left: rems(20)
+.navigation_list__item
+    list-style-image: url('../img/main/List_title_icon_noactive.svg')
+    list-style-type: none
+    list-style-position: outside
+    font-size: rems(23.5)
+    cursor: pointer
+    &:hover
+        transition: all .5s
+        list-style-image: url('../img/main/List_title_icon_active.svg')
+        .item__title
+            transition: all .3s
+            color: $main-color-red
+
+    &:not(&:last-child)
+        margin-right: rems(180)
+    &.active
+        list-style-image: url('../img/main/List_title_icon_active.svg')
+        list-style-type: none
+        & .item__title
+            color: $main-color-red
+            font-size: rems(24)
+            line-height: rems(28.27)
+            font-family: 'TT-Hoves-600'
+.item__title
+    text-transform: uppercase
+    color: $main-color-green
+
+// List info
+.navigation_list__info
+    list-style-type: none
+    min-height: 183px
+.info__item
+    max-width: 70%
+    font-size: rems(18)
+    line-height: rems(23.09)
+    letter-spacing: rems(.5)
+    vertical-align: middle
+    position: relative
+    & + .info__item
+        margin-top: rems(17)
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: -6.5%
+        display: inline-block
+        width: 24px
+        height: 24px
+        background: url('../img/main/List_item_icon.svg') center no-repeat
+
+// Main Interactive
+.main__interactive
+    display: flex
+    flex-direction: column
+    align-items: center
+.main__interactive__title
+    font-size: rems(24)
+    line-height: rems(30.79)
+    letter-spacing: rems(.5)
+    font-family: 'TT-Hoves-500'
+    font-weight: 500
+    color: $main-color-green
+.main__interactive__buttons
+    display: flex
+    flex-direction: column
+    align-items: center
+.button 
+.button--red_solid
+    position: relative
+    padding-left: rems(51)
+
+    &::before
+        content: ''
+        position: absolute
+        top: 25%
+        left: 5%
+        display: block
+        width: 24px 
+        height: 24px
+        background: url('../img/main/PDF.svg') center no-repeat
+    &:hover
+        background: transparent
+        color: $main-color-red
+        border: 1px solid $main-color-red
+        transition: all .3s 
+        box-shadow: 0px 0px 10px $main-color-red
+        &::before
+            transition: all .5s
+            background: url('../img/main/PDF_out.svg') center no-repeat
+.plans
+    display: block
+    text-transform: uppercase
+    font-family: 'TT-Hoves-700'
+    color: $main-color-red
+    font-size: rems(18)
+    line-height: rems(21)
+    letter-spacing: rems(1.15)
+    margin-top: rems(20)
+
+.logo_ssd
+    margin-top: rems(42)
+.number-mobile
+    display: none
+.logo_ssd__img
+.footer
+    margin-top: auto
+    position: relative
+.footer-bg
+    width: 100%
+    min-height: 490px
+    background: url('../img/footer/Footer_bg_pattern.png') center no-repeat
+    position: absolute
+    top: 100%
+    transform: translate(0, -100%)
+    left: 0
+    // margin: 0
+    padding: 0
+    z-index: -3
+
+.left-pattern
+    position: absolute
+    top: 100%
+    transform: translate(0, -100%)
+    left: 0
+    z-index: -1
+.right-pattern
+    position: absolute
+    top: 100%
+    transform: translate(0, -100%)
+    right: 0
+    z-index: -1
+
+.pattern_left1
+    background: url('../img/main/Pattern.png')
+    min-width: 463px
+    min-height: 447px
+    position: absolute
+    top: 25%
+    left: 0
+    z-index: -3
+
+
+.pattern_left2
+    background: url('../img/main/Pattern.png')
+    min-width: 463px
+    min-height: 447px
+    position: absolute
+    top: 25%
+    right: 0
+    transform: rotateY(180deg)
+    z-index: -3
