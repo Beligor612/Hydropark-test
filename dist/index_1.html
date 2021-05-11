@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Перший ЖК в гармонії з природою та на звязку з мегаполісом">
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/app.min.css">
+  <!-- ./Styles -->
+  <title>Hydropark</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="img/header/Logo_Hydropark.png" alt="Logotype" class="logo_img">
+      </div>
+      <div class="number">
+        <a href="tel:+380667777777">+ 380 66 777 77 77</a>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <!-- <div class="cloudy">
+      <div class="cloud1">
+        <img src="img/header/Clouds/Cloud1.png" alt="Cloud">
+      </div>
+      <div class="cloud2">
+        <img src="img/header/Clouds/Cloud2.png" alt="Cloud">
+      </div>
+      <div class="cloud3">
+        <img src="img/header/Clouds/Cloud3.png" alt="Cloud">
+      </div>
+      <div class="cloud4">
+        <img src="img/header/Clouds/Cloud1.png" alt="Cloud">
+      </div>
+      <div class="cloud5">
+        <img src="img/header/Clouds/Cloud1.png" alt="Cloud">
+      </div>
+      <div class="sun">
+        <img src="img/header/Clouds/Sun.png" alt="">
+      </div>
+    </div> -->
+    <div class="container">
+      <h1 class="main_title">Перший ЖК в гармонії з природою та на звязку з мегаполісом</h1>
+      <!-- OLD LIST -->
+      <nav class="navigation">
+        <ul class="navigation_list" id="nav_list">
+          <li class="navigation_list__item about active" id='about'>
+            <span class="item__title">про комплекс</span>
+          </li>
+          <li class="navigation_list__item benefits" id='benefits'>
+            <span class="item__title">переваги</span>
+          </li>
+          <li class="navigation_list__item place" id="place">
+            <span class="item__title">розташування</span>
+          </li>
+        </ul>
+        <ul class="navigation_list__info">
+          <li class="info__item">Закрита територія в 0.0 Га </li>
+          <li class="info__item">3639 м2 комфортного двору</li>
+          <li class="info__item">6 будинків з тематичними зонами активностей та відпочинку</li>
+          <li class="info__item">6 будинків з тематичними зонами активностей та відпочинку</li>
+        </ul>
+      </nav>
+      <!-- /OLD LIST -->
+      <!-- <div class="navigation">
+        <div class="navigation_list" id="nav_list">
+          <div class="navigation_list-wrap">
+            <div class="navigation_list__item active" id='about'>про комплекс</div>
+            <div class="navigation_list__item" id='benefits'>переваги</div>
+            <div class="navigation_list__item" id="place">розташування</div>
+          </div>
+          <div class="navigation_list-info-wrap">
+            <div class="navigation_list__info list_about">
+              <div class="info__item">Закрита територія в 0.0 Га </div>
+              <div class="info__item">3639 м2 комфортного двору</div>
+              <div class="info__item">6 будинків з тематичними зонами активностей та відпочинку</div>
+              <div class="info__item">6 будинків з тематичними зонами активностей та відпочинку</div>
+            </div>
+            <div class="navigation_list__info list_benefits">
+              <div class="info__item">Закрита територія в 0.0 Га </div>
+              <div class="info__item">3639 м2 комфортного двору</div>
+              <div class="info__item">6 будинків з тематичними зонами активностей та відпочинку</div>
+              <div class="info__item">6 будинків з тематичними зонами активностей та відпочинку</div>
+            </div> 
+            <div class="navigation_list__info list_place">
+              <div class="info__item">Закрита територія в 0.0 Га </div>
+              <div class="info__item">3639 м2 комфортного двору</div>
+              <div class="info__item">6 будинків з тематичними зонами активностей та відпочинку</div>
+              <div class="info__item">6 будинків з тематичними зонами активностей та відпочинку</div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="main__interactive">
+        <h2 class="main__interactive__title">БРОНЮЙ ТА ДІЗНАВАЙСЯ ПЕРШИМ</h2>
+        <div class="main__interactive__buttons">
+          <button class="button button--red_solid" id="present">ОТРИМАТИ ПРЕЗЕНТАЦІЮ</button>
+          <a href="#" download class="plans" id="plans">планування</a>
+        </div>
+      </div>
+      <div class="logo_ssd">
+        <img src="img/footer/SSD_Logo.png" alt="" class="logo_ssd__img">
+      </div>
+      
+    </div>
+    <div class="left-pattern">
+      <img src="img/footer/Left_Pattern.png" alt="" class="left-patter__img">
+    </div>
+    <div class="right-pattern">
+      <img src="img/footer/Right_Pattern.png" alt="" class="right-patter__img">
+    </div>
+    </section>
+    <div class="footer-bg"></div>
+    <div class="pattern_left1"></div>
+    <div class="pattern_left2"></div>
+  </main>
+
+  <div class="popup-wrap animate__animated animate__fadeIn" id="popup-wrap" style='display:none;'>
+    <div class="popup animate__animated animate__fadeIn" id="popup-form">
+      <div class="popup__close_icon" id="popup__close_icon"></div>
+      <form class="popup__form animate__animated" id="form">
+        <input type="text" name="fio" id="input_name" placeholder="ВАШЕ ІМ’Я" class="form_input-text" required>
+        <input type="tel" name="phone" id="input_phone" placeholder="+380 xx xxx xx xx" class="form_input-tel" required>
+        <input type="submit" value="ДІЗНАТИСЬ ПЕРШИМ" class="button button--red_solid form_input-submit" >
+      </form>
+      <div class="success animate__animated animate__fadeIn">Заявка успешно доставлена</div>
+
+      <div class="bg_pattern"></div>
+      <div class="pattern-group"></div>
+      <div class="pattern1"></div>
+    </div>
+  </div>
+  
+  <!-- JS-SCRIPTS -->
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  
+  <script type="text/javascript">
+    (function (d,s,u,e,p) {
+        p=d.getElementsByTagName(s)[0],e=d.createElement(s),e.async=1,e.src=u,p.parentNode.insertBefore(e, p);
+    })(document, 'script', 'https://a197.flatris.com.ua/public/web.js?cid=D3lEN6oqaxepRLd&hl=ru');
+</script>
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
