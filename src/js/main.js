@@ -131,9 +131,11 @@ $(function () {
                 },20 * ++index)
             })
         }
-        
-
     })
+    const clientHeight = $(document)[0].documentElement.clientHeight;
+    const clientWidth = $(document)[0].documentElement.clientWidth;
+    console.log(clientHeight, clientWidth)
+    $('#popup-form').width(`${(clientWidth/2.8)}`)
 
 
 
