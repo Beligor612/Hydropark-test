@@ -135,7 +135,7 @@ $(function () {
     const clientHeight = $(document)[0].documentElement.clientHeight;
     const clientWidth = $(document)[0].documentElement.clientWidth;
     console.log(clientHeight, clientWidth)
-    $('#popup-form').width(`${(clientWidth/2.8)}`)
+    $('#popup-form').width(`${(clientWidth/2.7)}`)
 
 
 
