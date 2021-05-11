@@ -1,4 +1,29 @@
 @media screen and ( max-width: 465px )
+    .header
+        padding-top: rems(20)
+        .container
+            justify-content: center
+            align-items: center
+    .logo
+        margin-top: rems(52)
+        max-width: 80%
+        // text-align: center
+        .logo_img
+            max-width: 100%
+    .main_title
+        margin-top: rems(15)
+    .number a
+        display: none
+    .number-mobile 
+        display: block
+        margin-top: rems(30)
+        a
+            color: $main-color-green
+            text-decoration: none
+            font-size: rems(19)
+            line-height: rems(24)
+            letter-spacing: rems(3.5)
+            font-weight: 700
     .pattern_left1
         display: none
     .popup
@@ -9,3 +34,5 @@
     .info__item
         &::before
             left: -10.5%
+    .footer-bg
+        transform: translate(0, -95%)
