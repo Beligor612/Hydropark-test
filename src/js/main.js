@@ -36,8 +36,8 @@ $(function () {
         }
     }
     function clearForm(){
-        $('#input_phone').removeClass('error')
-        $('#input_name').removeClass('error')
+        $('#tel').removeClass('error')
+        $('#name').removeClass('error')
         $('#form')[0].reset()
     }
     setTimeout(()=>{
@@ -47,7 +47,7 @@ $(function () {
         e.preventDefault()
         $('#chess_active_btn')[0].click()
     })
-    $("#input_phone").mask("+380(99) 999 99 99");
+    $("#tel").mask("+380(99) 999 99 99");
     $('#present').click(function(){
         $('#popup-wrap').show()
         setTimeout(()=>{
@@ -66,13 +66,30 @@ $(function () {
     })
     $('#form').submit(function(e){
         e.preventDefault()
-        const nameValue = $('#input_name').val()
-        const phoneValue = $('#input_phone').val()
-        const isValid = validateForm(nameValue, phoneValue)
+        // const nameValue = $('#name').val()
+        // const phoneValue = $('#tel').val()
+        // const isValid = validateForm(nameValue, phoneValue)
+        const Valdata = `action=post_wpcf7&client-name=${$('#name').val()}&client-tel=${$('#tel').val()}&client-email=${' '}&client-quest=${' '}`
+        console.log(Valdata)
+        $.ajax({
+            url: 'http://hydropark/wp-admin/admin-ajax.php',
+            type: 'POST',
+            data: Valdata,
+            beforeSend: function( xhr ) {
+                // $('#submit').text('Загрузка, 5 сек...');	
+            },
+            success: function( data ) {
+                success()
+                setTimeout(()=>{
+                    hidePopup()
+                }, 2000)
+                console.log( 'SUCCESS' );
+            }
+        })
         if(!isValid){
-            $('#input_phone').addClass('error')
-            $('#input_name').addClass('error')
-            $('#input_phone').after('<span class="animate_animated animate__fadeIn mikro">*Проверьте поля ввода</span>')
+            $('#tel').addClass('error')
+            $('#name').addClass('error')
+            $('#tel').after('<span class="animate_animated animate__fadeIn mikro">*Проверьте поля ввода</span>')
         } else{
             success()
             setTimeout(()=>{
@@ -132,9 +149,29 @@ $(function () {
             })
         }
     })
+    // $('#submit').click(function(event){
+        // event.preventDefault()
+        // const Valdata = `action=post_wpcf7&client-name=${$('#name').val()}&client-tel=${$('#tel').val()}&client-email=${' '}&client-quest=${' '}`
+        // console.log(Valdata)
+        // $.ajax({
+        //     url: 'http://hydropark/wp-admin/admin-ajax.php',
+        //     type: 'POST',
+        //     data: Valdata,
+        //     beforeSend: function( xhr ) {
+        //         // $('#submit').text('Загрузка, 5 сек...');	
+        //     },
+        //     success: function( data ) {
+        //         success()
+        //         setTimeout(()=>{
+        //             hidePopup()
+        //         }, 2000)	
+        //         console.log( 'SUCCESS' );
+        //     }
+        // })
+    // })
     const clientHeight = $(document)[0].documentElement.clientHeight;
     const clientWidth = $(document)[0].documentElement.clientWidth;
-    console.log(clientHeight, clientWidth)
+    // console.log(clientHeight, clientWidth)
     // $('#popup-form').width(`${(clientWidth/2.7)}`)
 
 
