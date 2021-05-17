@@ -1,5 +1,10 @@
+.app
+    display: flex
+    flex-direction: column
+    height: 100%
 .main
     display: flex
+    flex: 1 0 auto
     flex-direction: column
     justify-content: center
     // position: relative
@@ -220,11 +225,12 @@
 
 .logo_ssd
     margin-top: rems(42)
+    margin-bottom: rems(43)
 .number-mobile
     display: none
 .logo_ssd__img
 .footer
-    margin-top: auto
+    flex: 0 0 auto
     position: relative
 .footer-bg
     width: 100%
@@ -250,7 +256,6 @@
     transform: translate(0, -100%)
     right: 0
     z-index: -1
-
 .pattern_left1
     background: url('../img/main/Pattern.png')
     min-width: 463px
@@ -259,8 +264,6 @@
     top: 25%
     left: 0
     z-index: -3
-
-
 .pattern_left2
     background: url('../img/main/Pattern.png')
     min-width: 463px
