@@ -1,3 +1,7 @@
+html
+    heigh: 100%
+body
+    height: 100%
 .app
     display: flex
     flex-direction: column
@@ -5,6 +9,7 @@
 .main
     display: flex
     flex: 1 0 auto
+    min-height: 610px
     flex-direction: column
     justify-content: center
     // position: relative
@@ -17,33 +22,27 @@
         position: absolute
         top: 20px
         left: 13%
-        // transform: translateX(250px) translateY(20px)
     .cloud2
         position: absolute
         top: -15px
         left: 31.25%
-        // transform: translateX(600px) translateY(-15px)
     .cloud3
         position: absolute
         top: -48px
         left: 42.18%
-        // transform: translateX(810px) translateY(-48px)
         z-index: 1
     .cloud4
         position: absolute
         top: 50px
         left: 67.7%
-        // transform: translateX(1300px) translateY(50px) rotateY(180deg)
     .cloud5
         position: absolute
         top: 0
         left: 83%
-        // transform: translateX(1600px) translateY(0)
     .sun
         position: absolute
         top: -50px
         left: 53.125%
-        // transform: translateX(1020px) translateY(-50px)
         z-index: 0
     .container
         flex-direction: column
@@ -118,6 +117,7 @@
 
 // Nav_list
 .navigation
+    display: none
 .navigation_list
     display: flex
     justify-content: space-around
@@ -232,6 +232,7 @@
 .footer
     flex: 0 0 auto
     position: relative
+    // margin-bottom: auto
 .footer-bg
     width: 100%
     min-height: 490px
@@ -273,3 +274,28 @@
     right: 0
     transform: rotateY(180deg)
     z-index: -3
+
+
+.interactive_circles
+    display: flex
+    justify-content: space-evenly
+    width: 100%
+.circle
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 150px
+    height: 150px
+    text-align: center
+    background-color: $main-color-green
+    border-radius: 50%
+    cursor: pointer
+.circle_title
+    text-transform: uppercase
+    color: #fff
+    font-size: 18px
+.active
+    background-color: $main-color-red
+.about 
+.benefits
+.place
