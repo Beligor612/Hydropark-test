@@ -1,7 +1,14 @@
 @media screen and ( max-width: 1366px )
+    .header
+        padding-top: 0
+        .logo
+            transform: scale(.7)
+        .number
+
     .main_title
-        font-size: rems(36)
-        line-height: rems(43)
+        font-size: rems(32)
+        line-height: rems(32)
+        margin-bottom: 16px
     .navigation_list__item
         &:not(&:last-child)
             margin-right: rems(70)
@@ -9,21 +16,23 @@
         flex-direction: row
         align-items: center
         justify-content: space-around
+    .main__interactive__title
+        margin-top: 5px
     .plans
         margin-top: rems(0)
         margin-left: rems(16)
     .footer-bg
-        transform: translate(0, -74%)
+        transform: translate(0, -100%)
     .left-pattern
         img
             max-width: 412px
             min-height: 351px
-        transform: translate(0, -63%) 
+        transform: translate(0, -100%) 
     .right-pattern
         img
             max-width: 412px
             min-height: 351px
-        transform: translate(0, -63%)
+        transform: translate(0, -100%)
     // Cloudy
     .cloudy
         display: flex

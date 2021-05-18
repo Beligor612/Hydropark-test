@@ -1,18 +1,10 @@
-html
-    heigh: 100%
-body
-    height: 100%
-.app
-    display: flex
-    flex-direction: column
-    height: 100%
+html, body 
+    height: auto;
 .main
     display: flex
-    flex: 1 0 auto
-    min-height: 610px
+    min-height: 77vh
     flex-direction: column
-    justify-content: center
-    // position: relative
+    .container
     .cloudy
         display: flex
         background-color: rgba(0,0,0,.2)
@@ -117,7 +109,7 @@ body
 
 // Nav_list
 .navigation
-    display: none
+    // display: none
 .navigation_list
     display: flex
     justify-content: space-around
@@ -223,16 +215,28 @@ body
     letter-spacing: rems(1.15)
     margin-top: rems(20)
 
-.logo_ssd
-    margin-top: rems(42)
-    margin-bottom: rems(43)
-.number-mobile
-    display: none
-.logo_ssd__img
+
+// ? LOGO _ SSD
+// .logo_ssd
+//     margin-top: rems(42)
+//     margin-bottom: rems(43)
+// .number-mobile
+//     display: none
+// .logo_ssd__img
+
+
 .footer
-    flex: 0 0 auto
+    min-height: 100px
     position: relative
-    // margin-bottom: auto
+    .logo_ssd
+        a
+            display: block
+            margin: rems(42) 50% rems(43)
+            transform: translateX(-93px)
+    .number-mobile
+        display: none
+    .logo_ssd__img
+
 .footer-bg
     width: 100%
     min-height: 490px
@@ -275,27 +279,27 @@ body
     transform: rotateY(180deg)
     z-index: -3
 
-
-.interactive_circles
-    display: flex
-    justify-content: space-evenly
-    width: 100%
-.circle
-    display: flex
-    justify-content: center
-    align-items: center
-    width: 150px
-    height: 150px
-    text-align: center
-    background-color: $main-color-green
-    border-radius: 50%
-    cursor: pointer
-.circle_title
-    text-transform: uppercase
-    color: #fff
-    font-size: 18px
-.active
-    background-color: $main-color-red
-.about 
-.benefits
-.place
+// CIRCLE
+// .interactive_circles
+//     display: flex
+//     justify-content: space-evenly
+//     width: 100%
+// .circle
+//     display: flex
+//     justify-content: center
+//     align-items: center
+//     width: 150px
+//     height: 150px
+//     text-align: center
+//     background-color: $main-color-green
+//     border-radius: 50%
+//     cursor: pointer
+// .circle_title
+//     text-transform: uppercase
+//     color: #fff
+//     font-size: 18px
+// .active
+//     background-color: $main-color-red
+// .about 
+// .benefits
+// .place
