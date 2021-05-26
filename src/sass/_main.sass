@@ -226,13 +226,55 @@ html, body
 
 
 .footer
+    .prezentation
+        display: none
     min-height: 100px
     position: relative
     .logo_ssd
+        display: block
+        // margin-top: -70px
+        // margin-bottom: 115px
         a
             display: block
-            margin: rems(42) 50% rems(43)
+            margin: rems(42) 50% rems(40)
             transform: translateX(-93px)
+    .social
+        padding-left: 15px
+        // padding-bottom: 15px
+        padding-bottom: 12px
+
+        margin: -35px auto
+        width: 11%
+        position: relative
+        // border: 1px solid red
+        display: flex
+        justify-content: space-around
+        align-items: center
+        z-index: 52
+        transfition: all .3s
+        .icon + .icon
+            margin-left: 15px
+        .social_icons_facebook
+            &:hover
+                svg path
+                    transition: all .3s
+                    fill: #3b5998
+        .social_icons_telegram
+            &:hover
+                svg path
+                    transition: all .3s
+                    fill: #0989bb
+        .social_icons__instagram
+            &:hover
+                svg path
+                    transition: all .3s
+                    fill: #d65737
+        .social_icons__mail
+            margin-left: 15px
+            &:hover
+                svg path
+                    transition: all .3s
+                    fill: #FF0000
     .number-mobile
         display: none
     .logo_ssd__img
